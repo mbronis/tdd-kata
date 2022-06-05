@@ -27,10 +27,10 @@ def test_different_delimiters():
     assert calculator.add("//;\n1;2") == 3
 
 
-# def test_negative_numbers_exception():
-#     """it should raise an exception containing all negative numbers if any are found"""
-#     with pytest.raises(Exception, match=r"negatives not allowed \[-1, -2, -3\]"):
-#         calculator.add("-1, -2, -3, 1, 2, 3")
+def test_negative_numbers_exception():
+    """it should raise an exception containing all negative numbers if any are found"""
+    with pytest.raises(Exception, match=r"negatives not allowed: \[-1, -2, -3\]"):
+        calculator.add("-1, -2, -3, 1, 2, 3")
 
 
 # def test_bigger_than_1000():

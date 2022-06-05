@@ -11,7 +11,10 @@ def add(s: str) -> int:
 
     delimiter, s = get_delimiter(s)
     s = s.replace("\n", delimiter)
-    print(delimiter, s)
-    print(s.split(delimiter))
 
-    return sum(int(n) for n in s.split(delimiter) if n != "")
+    numbers = [int(n) for n in s.split(delimiter) if n != ""]
+    if min(numbers) < 0:
+        msg = f"negatives not allowed: {[n for n in numbers if n < 0]}"
+        raise Exception(msg)
+
+    return sum(numbers)
