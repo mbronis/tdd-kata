@@ -38,9 +38,9 @@ def test_bigger_than_1000():
     assert calculator.add("//;\n1000;1;2") == 3
 
 
-# def test_delimiters_any_length():
-#     """it should ignore numbers bigger than 1000"""
-#     assert calculator.add("//[***]\n1***2***3") == 6
+def test_delimiters_any_length():
+    """it should ignore numbers bigger than 1000"""
+    assert calculator.add("//[***]\n1***2***3") == 6
 
 
 # def test_multiple_delimiters():
