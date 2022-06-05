@@ -33,9 +33,9 @@ def test_negative_numbers_exception():
         calculator.add("-1, -2, -3, 1, 2, 3")
 
 
-# def test_bigger_than_1000():
-#     """it should ignore numbers bigger than 1000"""
-#     assert calculator.add("//;\n1000,1;2") == 3
+def test_bigger_than_1000():
+    """it should ignore numbers bigger than 1000"""
+    assert calculator.add("//;\n1000;1;2") == 3
 
 
 # def test_delimiters_any_length():
