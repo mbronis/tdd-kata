@@ -17,9 +17,9 @@ def test_add_multiple_CSVs():
     assert calculator.add("1, 2, 3") == 6
 
 
-# def test_new_line_as_delimiter():
-#     """it should be able to use new lines as delimiters"""
-#     assert calculator.add("1\n2,3") == 6
+def test_new_line_as_delimiter():
+    """it should be able to use new lines as delimiters"""
+    assert calculator.add("1\n2,3") == 6
 
 
 # def test_different_delimiters():
