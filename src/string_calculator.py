@@ -1,2 +1,2 @@
 def add(s: str) -> int:
-    pass
+    return len(s)
