@@ -12,9 +12,9 @@ def test_add_two_CSVs():
     assert calculator.add("1, 2") == 3
 
 
-# def test_add_multiple_CSVs():
-#     """it should an unknown amount of numbers in a comma separated string"""
-#     assert calculator.add("1, 2, 3") == 6
+def test_add_multiple_CSVs():
+    """it should an unknown amount of numbers in a comma separated string"""
+    assert calculator.add("1, 2, 3") == 6
 
 
 # def test_new_line_as_delimiter():
