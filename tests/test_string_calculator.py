@@ -7,9 +7,9 @@ def test_empty_string():
     assert calculator.add("") == 0
 
 
-# def test_add_two_CSVs():
-#     """it should add 2 numbers in a comma separated string"""
-#     assert calculator.add("1, 2") == 3
+def test_add_two_CSVs():
+    """it should add 2 numbers in a comma separated string"""
+    assert calculator.add("1, 2") == 3
 
 
 # def test_add_multiple_CSVs():
